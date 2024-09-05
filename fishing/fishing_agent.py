@@ -58,6 +58,11 @@ class FishingAgent:
     
     def pull_line(self):
         print("Pulling line...")
+        pyautogui.keyDown("shift")
+        time.sleep(0.005)
+        pyautogui.click(button="right")
+        time.sleep(0.010)
+        pyautogui.keyUp("shift")
     
     def run(self):
         while True:
